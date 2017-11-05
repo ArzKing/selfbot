@@ -1,0 +1,2 @@
+# selfbot
+def &amp; kick
