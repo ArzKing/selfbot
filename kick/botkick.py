@@ -125,11 +125,11 @@ def SEND_MESSAGE(op):
             if msg.contentType == 0:
                 #if "gname:" in msg.text:
 #--------------------------------------------------------------
-                if msg.text == "AOH? Slave The Enemy!":
+                if msg.text == "slave":
                     print "ok"
-                    _name = msg.text.replace("AOH? Slave The Enemy!","")
+                    _name = msg.text.replace("slave","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Tangkis bor kalo bisa hhh~ ")
+                    sendMessage(msg.to,"Tangkis bor kalo bisa hhh~ AOH NI AOH ")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
