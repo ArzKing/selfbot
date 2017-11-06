@@ -88,7 +88,8 @@ def NOTIFIED_READ_MESSAGE(op):
             else:
                 wait['readMember'][op.param1] += "\n・" + Name
                 wait['ROM'][op.param1][op.param2] = "・" + Name
-        else:
+
+		else:
             pass
     except:
         pass
@@ -130,6 +131,14 @@ def SEND_MESSAGE(op):
                     _name = msg.text.replace("slave","")
                     gs = client.getGroup(msg.to)
                     sendMessage(msg.to,"Tangkis bor kalo bisa hhh~ AOH NI AOH ")
+		    cl.sendMessage(msg)
+                    msg.contentMetadata = {'mid': 'u11bf06d9ce76ccc78b7b30d06a20767b'}
+                    cl.sendMessage(msg)
+                    msg.contentMetadata = {'mid': 'u11bf06d9ce76ccc78b7b30d06a20767b'}
+                    cl.sendMessage(msg)
+                    msg.contentMetadata = {'mid': 'u11bf06d9ce76ccc78b7b30d06a20767b'}
+                    cl.sendMessage(msg)
+                    msg.contentMetadata = {'mid': 'u11bf06d9ce76ccc78b7b30d06a20767b'}
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
